@@ -18,3 +18,7 @@ memmove - copy memory area
 memchr - scan memory for a character
 
 memcmp - compare memory areas
+
+strchr - locate character in string
+
+strrchr - locate character in string (last occurrence)
