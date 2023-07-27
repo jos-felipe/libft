@@ -25,3 +25,6 @@ strrchr - locate character in string (last occurrence)
 
 strlcpy, strlcat — size-bounded string copying and concatenation
 
+strncmp - compare two strings
+
+strnstr — locate a substring in a string
