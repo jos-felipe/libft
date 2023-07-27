@@ -6,7 +6,7 @@
 #    By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:34:41 by josfelip          #+#    #+#              #
-#    Updated: 2023/07/26 15:22:31 by josfelip         ###   ########.fr        #
+#    Updated: 2023/07/27 10:32:21 by josfelip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,16 +18,17 @@ SRCS =		ft_isalpha.c	\
 			ft_isascii.c	\
 			ft_isprint.c	\
 			ft_strlen.c		\
-			ft_tolower.c	\
-			ft_toupper.c	\
 			ft_memset.c		\
-			ft_memcpy.c		\
 			ft_bzero.c		\
+			ft_memcpy.c		\
 			ft_memmove.c	\
+			ft_toupper.c	\
+			ft_tolower.c	\
+			ft_strchr.c		\
+			ft_strrchr.c	\		
 			ft_memchr.c		\
 			ft_memcmp.c		\
-			ft_strchr.c		\
-			ft_strrchr.c	\
+			
 
 INCLUDES=	./
 
