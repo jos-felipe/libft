@@ -1,4 +1,7 @@
 # Libft
+
+![norminette](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME_OR_FILE>/badge.svg)
+
 My very first own C library
 
 strlen - calculate the length of a string
