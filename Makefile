@@ -6,7 +6,7 @@
 #    By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:34:41 by josfelip          #+#    #+#              #
-#    Updated: 2023/07/29 18:07:09 by josfelip         ###   ########.fr        #
+#    Updated: 2023/07/30 14:10:25 by josfelip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS =		ft_isalpha.c	\
 			ft_toupper.c	\
 			ft_tolower.c	\
 			ft_strchr.c		\
-			ft_strrchr.c	\		
+			ft_strrchr.c	\
 			ft_memchr.c		\
 			ft_memcmp.c		\
 			ft_strchr.c		\
@@ -34,6 +34,7 @@ SRCS =		ft_isalpha.c	\
 			ft_strlcat.c	\
 			ft_strncmp.c	\
 			ft_strnstr.c	\
+			ft_atoi.c		\
 
 INCLUDES=	./
 
