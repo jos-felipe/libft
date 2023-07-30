@@ -1,6 +1,6 @@
 # Libft
 
-![norminette](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml>/badge.svg)
 
 My very first own C library
 
