@@ -2,7 +2,7 @@
 
 ![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml>/badge.svg)
 
-My very first own C library
+A biblioteca Libft fornece funcões fundamentais para manipular e processar cadeias de caracteres e trechos de memória. 
 
 strlen - calculate the length of a string
 
@@ -31,3 +31,9 @@ strlcpy, strlcat — size-bounded string copying and concatenation
 strncmp - compare two strings
 
 strnstr — locate a substring in a string
+
+ atoi - converte uma cadeia de caracteres em um inteiro
+
+ calloc - reserva espaço em memória de suficiente para acomodar 'n' elememtos de tamanho 'size' e valor zero
+
+ strdup - salva uma cópia de uma cadeia de caracteres

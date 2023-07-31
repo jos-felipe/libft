@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/27 11:40:10 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/30 13:27:13 by josfelip         ###   ########.fr       */
+/*   Created: 2023/07/31 12:09:25 by josfelip          #+#    #+#             */
+/*   Updated: 2023/07/31 12:20:00 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strdup(const char *s1)
 {
-	size_t	c;
-	size_t	d;
+	char	*result;
+	size_t	len;
 
-	if (size <= ft_strlen(dst))
-		return (size + ft_strlen(src));
-	c = ft_strlen(dst);
-	d = 0;
-	while (src[d] && c + 1 < size)
-	{
-		dst[c] = src[d];
-		c++;
-		d++;
-	}
-	dst[c] = '\0';
-	return (ft_strlen(dst) + ft_strlen(&src[d]));
+	len = ft_strlen(s1);
+	result = malloc(len + 1);
+	if (result == NULL)
+		return (NULL);
+	ft_memmove(result, s1, len);
+	result[len] = '\0';
+	return (result);
 }

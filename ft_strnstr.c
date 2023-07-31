@@ -6,7 +6,7 @@
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 14:48:37 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/29 17:25:58 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/07/30 13:25:47 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	len_little;
-	
+
 	i = 0;
 	len_little = ft_strlen(little);
 	if (!len_little)
