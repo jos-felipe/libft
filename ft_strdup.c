@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/26 11:21:44 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/31 12:23:21 by josfelip         ###   ########.fr       */
+/*   Created: 2023/07/31 12:09:25 by josfelip          #+#    #+#             */
+/*   Updated: 2023/07/31 12:20:00 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	unsigned char	*ptr;
-	unsigned char	*ptrd;
+	char	*result;
+	size_t	len;
 
-	ptr = (unsigned char *)src;
-	ptrd = (unsigned char *)dest;
-	if (ptrd < ptr)
-		ft_memcpy(dest, src, n);
-	else
-	{
-		while (n--)
-			ptrd[n] = ptr[n];
-	}
-	return (dest);
+	len = ft_strlen(s1);
+	result = malloc(len + 1);
+	if (result == NULL)
+		return (NULL);
+	ft_memmove(result, s1, len);
+	result[len] = '\0';
+	return (result);
 }
