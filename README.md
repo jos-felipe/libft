@@ -28,7 +28,7 @@ strrchr - locate character in string (last occurrence)
 
 strlcpy, strlcat — size-bounded string copying and concatenation
 
-strlcpy -
+strlcpy - Copia até 'size' caracteres de 'src' para 'dst'
 
 strncmp - compare two strings
 
@@ -40,4 +40,6 @@ strnstr — locate a substring in a string
 
  strdup - salva uma cópia de uma cadeia de caracteres
 
- ft_substr - Reserva espaço de memória (com malloc(3)) e returna à sub-cadeia de caracteres da cadeia 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
+ ft_substr - Reserva espaço em memória (com malloc(3)) e retorna à sub-cadeia de caracteres de 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
+
+ft_strjoin - Reserva espaço em memória (com malloc(3)) e retorna uma nova cadeia de caracteres que resulta da concatenação de 's1' e 's2'.
