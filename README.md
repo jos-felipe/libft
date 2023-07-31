@@ -28,6 +28,8 @@ strrchr - locate character in string (last occurrence)
 
 strlcpy, strlcat — size-bounded string copying and concatenation
 
+strlcpy -
+
 strncmp - compare two strings
 
 strnstr — locate a substring in a string
@@ -37,3 +39,5 @@ strnstr — locate a substring in a string
  calloc - reserva espaço em memória de suficiente para acomodar 'n' elememtos de tamanho 'size' e valor zero
 
  strdup - salva uma cópia de uma cadeia de caracteres
+
+ ft_substr - Reserva espaço de memória (com malloc(3)) e returna à sub-cadeia de caracteres da cadeia 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
