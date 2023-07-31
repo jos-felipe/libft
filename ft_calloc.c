@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/30 13:41:18 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/31 08:59:30 by josfelip         ###   ########.fr       */
+/*   Created: 2023/07/31 09:23:58 by josfelip          #+#    #+#             */
+/*   Updated: 2023/07/31 10:54:09 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	int	sign;
-	int	nb;
+	int		target_size;
+	void	*result;
 
-	sign = 1;
-	nb = 0;
-	while (!ft_isprint(*nptr))
-		nptr++;
-	if (*nptr == '-')
-		sign *= -1;
-	if (*nptr == '-' || *nptr == '+')
-		nptr++;
-	while (ft_isdigit(*nptr))
-	{
-		nb = (*nptr - '0') + (nb * 10);
-		nptr++;
-	}
-	return (nb * sign);
+	if (nmemb == (size_t)INT_MIN && size == (size_t)INT_MIN)
+		return (NULL);
+	target_size = nmemb * size;
+	if (target_size != 0 && target_size / nmemb != size)
+		return (NULL);
+	result = malloc(target_size);
+	ft_bzero(result, target_size);
+	return (result);
 }
