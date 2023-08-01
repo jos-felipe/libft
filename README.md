@@ -40,6 +40,12 @@ strnstr — locate a substring in a string
 
  strdup - salva uma cópia de uma cadeia de caracteres
 
- ft_substr - Reserva espaço em memória (com malloc(3)) e retorna à sub-cadeia de caracteres de 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
+ substr - Reserva espaço em memória (com malloc(3)) e retorna a sub-cadeia de caracteres de 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
 
-ft_strjoin - Reserva espaço em memória (com malloc(3)) e retorna uma nova cadeia de caracteres que resulta da concatenação de 's1' e 's2'.
+strjoin - Reserva espaço em memória (com malloc(3)) e retorna uma nova cadeia de caracteres que resulta da concatenação de 's1' e 's2'.
+
+strtrim - Reserva espaço em memória (com malloc(3)) e retorna uma cópia de 's1' com os caracteres especificados em 'set' removidos do início e fim da  cadeia de caracteres.
+
+itoa - Reserva espaço em memória (com malloc(3)) e retorna uma cadeia de caracteres que representa o inteiro recebido como argumento. Números negativos devem ser tratados.
+
+split - Reserva espaço em memória (com malloc(3)) e retorna uma sequência de cadeia de caracteres obtidas ao separar 's' usando o caracter 'c' como delimitador. A sequência deve terminar com o ponteiro NULL.
