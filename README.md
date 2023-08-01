@@ -49,3 +49,5 @@ strtrim - Reserva espaço em memória (com malloc(3)) e retorna uma cópia de 's
 itoa - Reserva espaço em memória (com malloc(3)) e retorna uma cadeia de caracteres que representa o inteiro recebido como argumento. Números negativos devem ser tratados.
 
 split - Reserva espaço em memória (com malloc(3)) e retorna uma sequência de cadeia de caracteres obtidas ao separar 's' usando o caracter 'c' como delimitador. A sequência deve terminar com o ponteiro NULL.
+
+strmapi - Aplica a função 'f' a cada caracter da cadeia 's', e passa seu índice como primeiro argumento para criar uma nova cadeia de caracteres (com malloc(3)) como resultado de sucessivas aplicações de 'f'. 

@@ -6,7 +6,7 @@
 #    By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:34:41 by josfelip          #+#    #+#              #
-#    Updated: 2023/08/01 09:28:14 by josfelip         ###   ########.fr        #
+#    Updated: 2023/08/01 14:34:15 by josfelip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,6 +41,8 @@ SRCS =		ft_isalpha.c	\
 			ft_strjoin.c	\
 			ft_itoa.c		\
 			ft_split.c		\
+			ft_strmapi.c	\
+			ft_strtrim.c	\
 
 INCLUDES=	./
 
