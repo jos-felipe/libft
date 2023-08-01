@@ -2,7 +2,7 @@
 
 ![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml>/badge.svg)
 
-A biblioteca Libft fornece funcões fundamentais para manipular e processar cadeias de caracteres e trechos de memória. 
+A biblioteca Libft fornece funcões fundamentais para manipular e processar cadeias de caracteres e trechos de memória na linguagem de programação C. 
 
 strlen - calculate the length of a string
 
@@ -40,7 +40,7 @@ strnstr — locate a substring in a string
 
  strdup - salva uma cópia de uma cadeia de caracteres
 
- substr - Reserva espaço em memória (com malloc(3)) e retorna a sub-cadeia de caracteres de 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
+substr - Reserva espaço em memória (com malloc(3)) e retorna a sub-cadeia de caracteres de 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
 
 strjoin - Reserva espaço em memória (com malloc(3)) e retorna uma nova cadeia de caracteres que resulta da concatenação de 's1' e 's2'.
 
@@ -48,6 +48,8 @@ strtrim - Reserva espaço em memória (com malloc(3)) e retorna uma cópia de 's
 
 itoa - Reserva espaço em memória (com malloc(3)) e retorna uma cadeia de caracteres que representa o inteiro recebido como argumento. Números negativos devem ser tratados.
 
-split - Reserva espaço em memória (com malloc(3)) e retorna uma sequência de cadeia de caracteres obtidas ao separar 's' usando o caracter 'c' como delimitador. A sequência deve terminar com o ponteiro NULL.
+split - Reserva espaço em memória (com malloc(3)) e retorna uma sequência de cadeias de caracteres obtidas ao separar 's' usando o caracter 'c' como delimitador. A sequência deve terminar com o ponteiro 'NULL'.
 
-strmapi - Aplica a função 'f' a cada caracter da cadeia 's', e passa seu índice como primeiro argumento para criar uma nova cadeia de caracteres (com malloc(3)) como resultado de sucessivas aplicações de 'f'. 
+strmapi - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro argumento, 'f' recebe a posição do caracter, Uma nova cadeia de caracteres deve ser criada (com malloc(3)) para armazenar o caracter devolvido por 'f'.
+
+ft_striteri - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro argumento, 'f' recebe a posição do caracter. O endereço de cada caracter é passado à 'f' para ser modificado se necessário. 
