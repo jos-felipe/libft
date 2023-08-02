@@ -6,11 +6,18 @@
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 13:18:45 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/31 16:04:57 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/08/02 11:54:21 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static size_t	ft_min(size_t start, size_t len)
+{
+	if (start < len)
+		return (start);
+	return (len);
+}
 
 static char	*empty_string(void)
 {
@@ -35,8 +42,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			return (NULL);
 		return (str);
 	}
+	s_len -= (size_t)start;
 	if (len > s_len)
 		len = s_len;
+	len = ft_min(s_len, len);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);

@@ -34,11 +34,11 @@ strncmp - compare two strings
 
 strnstr — locate a substring in a string
 
- atoi - converte uma cadeia de caracteres em um inteiro
+atoi - converte uma cadeia de caracteres em um inteiro
 
- calloc - reserva espaço em memória de suficiente para acomodar 'n' elememtos de tamanho 'size' e valor zero
+calloc - reserva espaço em memória de suficiente para acomodar 'n' elememtos de tamanho 'size' e valor zero
 
- strdup - salva uma cópia de uma cadeia de caracteres
+strdup - salva uma cópia de uma cadeia de caracteres
 
 substr - Reserva espaço em memória (com malloc(3)) e retorna a sub-cadeia de caracteres de 's'. A sub-cadeia começa em 'start' e tem tamanho máximo igual a 'len'.
 
