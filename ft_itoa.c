@@ -6,28 +6,28 @@
 /*   By: felipe <felipe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 23:46:24 by josfelip          #+#    #+#             */
-/*   Updated: 2023/08/02 17:46:08 by felipe           ###   ########.fr       */
+/*   Updated: 2023/08/02 19:35:12 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_neghdl(size_t *len, size_t *idx, int n)
+size_t	ft_neghdl(size_t *len, size_t *sig, int n)
 {
-	size_t	__n;
+	size_t	nbr;
 
 	if (n < 0)
 	{
 		if (n == -__INT_MAX__ - 1)
-			__n = 1 + (size_t)__INT_MAX__;
+			nbr = 1 + (size_t)__INT_MAX__;
 		else
-			__n = -n;
+			nbr = -n;
 		*len += 1;
-		*idx = 1;
+		*sig = 1;
 	}
 	else
-		__n = n;
-	return (__n);
+		nbr = n;
+	return (nbr);
 }
 
 static size_t	ft_ilen(int n)
@@ -47,23 +47,23 @@ static size_t	ft_ilen(int n)
 char	*ft_itoa(int n)
 {
 	size_t	len;
-	size_t	idx;
-	size_t	__n;
+	size_t	sig;
+	size_t	nbr;	
 	char	*str;
 
 	len = ft_ilen(n);
-	idx = 0;
-	__n = ft_neghdl(&len, &idx, n);
+	sig = 0;
+	nbr = ft_neghdl(&len, &sig, n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	if (idx)
+	if (sig)
 		*str = '-';
 	str[len] = '\0';
-	while (idx < len--)
+	while (sig < len--)
 	{
-		str[len] = (char)(__n % 10 + '0');
-		__n /= 10;
+		str[len] = (char)(nbr % 10 + '0');
+		nbr /= 10;
 	}
 	return (str);
 }
