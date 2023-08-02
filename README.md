@@ -54,6 +54,11 @@ strmapi - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro a
 
 striteri - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro argumento, 'f' recebe a posição do caracter. O endereço de cada caracter é passado à 'f' para ser modificado se necessário. 
 
-putchar_fd - Coloca o caracter 'c' no descritor de arquivo dado.
+putchar_fd - Coloca o caracter 'c' no descritor de arquivo fornecido.
 
+putstr_fd - Coloca a cadeia de caracteres 's' no descritor de arquivo fornecido.
+
+putendl_fd - Coloca a cadeia de caracteres 's' no descritor de arquivo fornecido seguido de uma quebra de linha.
+
+putnbr_fd - Coloca o inteiro 'n' no descritor de arquivo fornecido.
 
