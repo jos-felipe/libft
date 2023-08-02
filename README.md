@@ -52,4 +52,8 @@ split - Reserva espaço em memória (com malloc(3)) e retorna uma sequência de 
 
 strmapi - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro argumento, 'f' recebe a posição do caracter, Uma nova cadeia de caracteres deve ser criada (com malloc(3)) para armazenar o caracter devolvido por 'f'.
 
-ft_striteri - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro argumento, 'f' recebe a posição do caracter. O endereço de cada caracter é passado à 'f' para ser modificado se necessário. 
+striteri - Aplica a função 'f' a cada caracter da cadeia 's'. Em seu primeiro argumento, 'f' recebe a posição do caracter. O endereço de cada caracter é passado à 'f' para ser modificado se necessário. 
+
+putchar_fd - Coloca o caracter 'c' no descritor de arquivo dado.
+
+
