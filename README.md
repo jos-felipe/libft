@@ -26,7 +26,7 @@ strchr - locate character in string
 
 strrchr - locate character in string (last occurrence)
 
-strlcpy, strlcat — size-bounded string copying and concatenation
+strlcat — size-bounded string copying and concatenation
 
 strlcpy - Copia até 'dstsize' menos um caracteres da cadeia 'src' para 'dst' e adiciona o caracter nulo caso 'dstsize' seja diferente de zero.
 

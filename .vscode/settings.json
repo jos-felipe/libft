@@ -1,7 +1,0 @@
-{
-	"files.associations": {
-		"stdio.h": "c",
-		"stddef.h": "c",
-		"string_view": "cpp"
-	}
-}
