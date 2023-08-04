@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
+/*   By: felipe <felipe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 10:23:56 by josfelip          #+#    #+#             */
-/*   Updated: 2023/08/02 11:20:52 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/08/04 19:19:20 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	_n;
 	int	fd;
@@ -40,4 +40,4 @@ int	main(void)
 	fd = 1;
 	ft_putnbr_fd(_n, fd);
 	return (0);
-}
+} */

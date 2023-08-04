@@ -6,7 +6,7 @@
 #    By: felipe <felipe@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:34:41 by josfelip          #+#    #+#              #
-#    Updated: 2023/08/04 12:48:44 by felipe           ###   ########.fr        #
+#    Updated: 2023/08/04 19:18:06 by felipe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,11 +43,11 @@ SRCS =		ft_isalpha.c	\
 			ft_split.c		\
 			ft_strmapi.c	\
 			ft_strtrim.c	\
-			# ft_striteri.c	\
-			# ft_putchar_fd.c	\
-			# ft_putstr_fd.c	\
-			# ft_putendl_fd.c	\
-			# ft_putnbr_fd.c	\
+			ft_striteri.c	\
+			ft_putchar_fd.c	\
+			ft_putstr_fd.c	\
+			ft_putendl_fd.c	\
+			ft_putnbr_fd.c	\
 
 INCLUDES=	./
 
