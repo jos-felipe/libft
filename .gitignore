@@ -1,4 +1,5 @@
 libftTester
+libftAudit
 *.o
 libft.a
 *.pdf

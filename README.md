@@ -1,6 +1,6 @@
 # Libft
 
-![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml>/badge.svg)
+![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml/badge.svg)
 
 A biblioteca Libft fornece funcões fundamentais para manipular e processar cadeias de caracteres e trechos de memória na linguagem de programação C. 
 
@@ -28,7 +28,7 @@ strrchr - locate character in string (last occurrence)
 
 strlcpy, strlcat — size-bounded string copying and concatenation
 
-strlcpy - Copia até 'size' caracteres de 'src' para 'dst'
+strlcpy - Copia até 'dstsize' menos um caracteres da cadeia 'src' para 'dst' e adiciona o caracter nulo caso 'dstsize' seja diferente de zero.
 
 strncmp - compare two strings
 

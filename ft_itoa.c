@@ -6,7 +6,7 @@
 /*   By: felipe <felipe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 23:46:24 by josfelip          #+#    #+#             */
-/*   Updated: 2023/08/02 19:35:12 by felipe           ###   ########.fr       */
+/*   Updated: 2023/08/03 15:12:55 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ size_t	ft_neghdl(size_t *len, size_t *sig, int n)
 
 	if (n < 0)
 	{
-		if (n == -__INT_MAX__ - 1)
-			nbr = 1 + (size_t)__INT_MAX__;
+		if (n == -2147483647 - 1)
+			nbr = 1 + (size_t)2147483647;
 		else
 			nbr = -n;
 		*len += 1;
