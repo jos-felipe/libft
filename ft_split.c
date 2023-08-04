@@ -6,7 +6,7 @@
 /*   By: felipe <felipe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 09:28:53 by josfelip          #+#    #+#             */
-/*   Updated: 2023/08/03 22:07:46 by felipe           ###   ########.fr       */
+/*   Updated: 2023/08/04 19:46:46 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	**ft_split(char const *s, char c)
 		{
 			_ss[idx] = ft_getwrd(s, c);
 			s += ft_strlen(_ss[idx]);
-			idx++;	
+			idx++;
 		}
 		else
 			s++;
@@ -74,38 +74,3 @@ char	**ft_split(char const *s, char c)
 	_ss[len] = NULL; 
 	return (_ss);
 }
-
-/* int	main(void)
-{
-	int		i;
-	char	**ss;
-	char	*s;
-
-	printf("ft_split:\n");
-	i = 0;
-	i++;
-	s = "42 is the best tech.";
-	ss = ft_split(s,' ');
-	while(*ss)
-	{
-		printf("%s\n", *ss);
-		ss++;
-	}
-	i++;
-	s = "--1-2--3---4----5-----42";
-	ss = ft_split(s,'-');
-	while(*ss)
-	{
-		printf("%s\n", *ss);
-		ss++;
-	}
-	i++;
-	s = strdup("Tripouille");
-	ss = ft_split(s,' ');
-	while(*ss)
-	{
-		printf("%s\n", *ss);
-		ss++;
-	}
-	return (0);
-} */
