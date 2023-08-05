@@ -6,7 +6,7 @@
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 09:28:53 by josfelip          #+#    #+#             */
-/*   Updated: 2023/08/05 07:49:00 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/08/05 07:57:54 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,6 @@ char	**ft_split(char const *s, char c)
 		else
 			s++;
 	}
-	_ss[len] = NULL; 
+	_ss[len] = NULL;
 	return (_ss);
 }
