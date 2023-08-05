@@ -6,7 +6,7 @@
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 11:40:10 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/30 13:27:13 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/07/31 17:10:02 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	c;
 	size_t	d;
 
-	if (size <= ft_strlen(dst))
-		return (size + ft_strlen(src));
 	c = ft_strlen(dst);
+	d = ft_strlen(src);
+	if (size <= c)
+		return (size + d);
 	d = 0;
 	while (src[d] && c + 1 < size)
 	{

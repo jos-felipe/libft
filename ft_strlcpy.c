@@ -6,11 +6,12 @@
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 11:07:27 by josfelip          #+#    #+#             */
-/*   Updated: 2023/07/27 11:39:13 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/08/05 07:49:29 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
+#include <stdio.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -30,3 +31,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		l++;
 	return (l);
 }
+
+/* int	main(void)
+{
+	char	*src;
+	char	*dst;
+	size_t	len;
+
+	src = "felipe";
+	dst = (char *)malloc(ft_strlen(src) + 1);
+	len = ft_strlcpy(dst, src, ft_strlen(src) + 1);
+	printf("src = %s, dst = %s, size = %lu", src, dst, len);
+	return (0);
+} */

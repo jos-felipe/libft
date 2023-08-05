@@ -1,4 +1,6 @@
-libftTester
+.libftTester
+.libftAudit
 *.o
 libft.a
 *.pdf
+.DS_Store
