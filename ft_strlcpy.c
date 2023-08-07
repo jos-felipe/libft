@@ -6,41 +6,30 @@
 /*   By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 11:07:27 by josfelip          #+#    #+#             */
-/*   Updated: 2023/08/05 07:49:29 by josfelip         ###   ########.fr       */
+/*   Updated: 2023/08/07 15:17:35 by josfelip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	l;
+	size_t	i;
 
-	l = 0;
-	if (!dst || !src)
-		return (0);
-	while (src[l] && l + 1 < size)
+	i = 0;
+	while (src[i])
+		i++;
+	if (dstsize == 0)
+		return (i);
+	i = 0;
+	while (src[i] && i < dstsize - 1)
 	{
-		dst[l] = src[l];
-		l++;
+		dst[i] = src[i];
+		i++;
 	}
-	if (size)
-		dst[l] = '\0';
-	while (src[l])
-		l++;
-	return (l);
+	dst[i] = '\0';
+	i = 0;
+	while (src[i])
+		i++;
+	return (i);
 }
-
-/* int	main(void)
-{
-	char	*src;
-	char	*dst;
-	size_t	len;
-
-	src = "felipe";
-	dst = (char *)malloc(ft_strlen(src) + 1);
-	len = ft_strlcpy(dst, src, ft_strlen(src) + 1);
-	printf("src = %s, dst = %s, size = %lu", src, dst, len);
-	return (0);
-} */
