@@ -2,7 +2,7 @@
 
 ![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml/badge.svg)
 
-A biblioteca Libft fornece funcões fundamentais para manipular e processar cadeias de caracteres e trechos de memória na linguagem de programação C. 
+##Descrição das funções:
 
 strlen - calculate the length of a string
 
