@@ -2,7 +2,7 @@
 
 ![norminette](https://github.com/jos-felipe/libft/actions/workflows/main.yml/badge.svg)
 
-##Descrição das funções:
+## Descrição das funções:
 
 strlen - calculate the length of a string
 
