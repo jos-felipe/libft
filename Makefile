@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: josfelip <josfelip@student.42.fr>          +#+  +:+       +#+         #
+#    By: josfelip <josfelip@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:34:41 by josfelip          #+#    #+#              #
-#    Updated: 2023/08/08 08:48:39 by josfelip         ###   ########.fr        #
+#    Updated: 2024/01/29 13:03:12 by josfelip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 	=	libft.a
+NAME	=	libft.a
 
-SRCS 	=	ft_isalpha.c	\
+SRCS	=	ft_isalpha.c	\
 			ft_isdigit.c	\
 			ft_isalnum.c	\
 			ft_isascii.c	\
@@ -48,8 +48,7 @@ SRCS 	=	ft_isalpha.c	\
 			ft_putstr_fd.c	\
 			ft_putendl_fd.c	\
 			ft_putnbr_fd.c	\
-
-BONUS 	=	ft_lstnew.c			\
+			ft_lstnew.c			\
 			ft_lstadd_front.c	\
 			ft_lstsize.c		\
 			ft_lstlast.c		\
@@ -63,18 +62,16 @@ INCLUDES=	./
 
 OBJS	=	${SRCS:.c=.o}
 
-B_OBJS	=	${BONUS:.c=.o}
+CFLAGS	= -Wall -Wextra -Werror
+RM		= rm -f
 
-CC 		= clang	
-CFLAGS 	= -Wall -Wextra -Werror
-RM 		= rm -f
-
-all: ${NAME}
+all: ${OBJS} ${NAME}
 
 %.o: %.c
 	${CC} ${CFLAGS} -I${INCLUDES} -c $< -o $@
+	ar rc ${NAME} $@
 
-${NAME}: ${OBJS}
+${NAME}:
 	ar rc ${NAME} ${OBJS}
 
 clean:
@@ -85,9 +82,6 @@ fclean: clean
 
 re: fclean all
 
-bonus: ${OBJS} ${B_OBJS}
-	ar rc ${NAME} ${OBJS} ${B_OBJS}
-
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
 
 
